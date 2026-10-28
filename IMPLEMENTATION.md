@@ -303,7 +303,7 @@ four sprints of 10. Assign initial owners and labels.\
 criteria. - Dependencies and labels are recorded. - Team confirms the
 sprint order before implementation.
 
-### S1-03 --- Finalize requirements and acceptance tests
+### S1-03 --- Finalize requirements and acceptance tests — **Completed**
 
 **Owner:** Member A\
 **Description:** Write the concise functional/non-functional
