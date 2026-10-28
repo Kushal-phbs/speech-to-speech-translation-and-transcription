@@ -19,8 +19,8 @@ and approves that integration.
   schemas, and backend tests.
 - `frontend/` — browser UI, styles, and client-side interaction code.
 - `docs/` — requirements, architecture, API, testing, and demonstration
-  guidance. See [Requirements and acceptance tests](docs/requirements.md)
-  for functional/non-functional requirements and user journeys.
+  guidance. See [requirements and acceptance tests](docs/requirements.md)
+  and [architecture and provider boundaries](docs/architecture.md).
 - `scripts/` — local development and Windows setup helpers.
 - `IMPLEMENTATION.md` — the Scrum implementation contract and backlog
   for the full project.
@@ -52,7 +52,7 @@ through GitHub after cloning with the command above.
 - [x] AMTT-1 — Repository and project baseline completed.
 - [x] AMTT-2 — Jira backlog, sprint structure, and export completed.
 - [x] AMTT-3 — Requirements and acceptance tests.
-- [ ] AMTT-4 — Architecture and provider boundaries.
+- [x] AMTT-4 — Architecture and provider boundaries.
 - [ ] AMTT-5 — Python environment and dependencies.
 - [ ] AMTT-6 — Environment configuration.
 - [ ] AMTT-7 — FastAPI application entry point.
