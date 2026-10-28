@@ -334,7 +334,7 @@ and HTTP client dependencies are listed. - Heavy ML dependencies are
 separated or documented so a clean install can run tests without
 downloading models. - No machine-specific absolute paths are committed.
 
-### S1-06 --- Add environment configuration
+### S1-06 --- Add environment configuration — **Completed**
 
 **Owner:** Member B\
 **Description:** Add typed settings for host, port, log level, model
