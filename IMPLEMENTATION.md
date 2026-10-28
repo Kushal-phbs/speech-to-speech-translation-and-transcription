@@ -352,7 +352,7 @@ startup/shutdown hooks, and API router registration.\
 command. - `/docs` is available. - Startup does not download models
 unexpectedly. - Importing the app does not require a GPU.
 
-### S1-08 --- Implement health endpoint and basic API tests
+### S1-08 --- Implement health endpoint and basic API tests — **Completed**
 
 **Owner:** Member D\
 **Description:** Add `GET /api/health` and tests for app startup and
