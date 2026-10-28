@@ -282,7 +282,7 @@ Jira **before coding**.
 backend/frontend skeleton, basic checks, and a team workflow everyone
 can run locally.
 
-### S1-01 --- Create repository and project baseline
+### S1-01 --- Create repository and project baseline — **Completed**
 
 **Owner:** Member D\
 **Description:** Create the GitHub repository, default branch, initial
@@ -293,7 +293,7 @@ virtual environments, caches, generated audio, model weights, and build
 artifacts. - README states project scope and English↔Hindi-only
 limitation. - All four members can clone the repository.
 
-### S1-02 --- Create Jira backlog and four sprints
+### S1-02 --- Create Jira backlog and four sprints — **Completed**
 
 **Owner:** Member D\
 **Description:** Create all 40 items from this section, grouped into

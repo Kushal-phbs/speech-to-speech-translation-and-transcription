@@ -47,5 +47,17 @@ through GitHub after cloning with the command above.
 
 ## Current status
 
-The repository contains the project scaffold and is ready for the
-implementation backlog defined in `IMPLEMENTATION.md`.
+- [x] AMTT-1 — Repository and project baseline completed.
+- [x] AMTT-2 — Jira backlog, sprint structure, and export completed.
+- [ ] AMTT-3 — Requirements and acceptance tests.
+- [ ] AMTT-4 — Architecture and provider boundaries.
+- [ ] AMTT-5 — Python environment and dependencies.
+- [ ] AMTT-6 — Environment configuration.
+- [ ] AMTT-7 — FastAPI application entry point.
+- [ ] AMTT-8 — Health endpoint and API tests.
+- [ ] AMTT-9 — Initial browser UI shell.
+- [ ] AMTT-10 — Git branching, PR, and review rules.
+
+Sprint 1 remains in progress until all ten items and the release
+checkpoint are completed. The detailed plan is maintained in
+`IMPLEMENTATION.md`.
