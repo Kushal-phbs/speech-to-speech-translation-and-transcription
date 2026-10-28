@@ -41,8 +41,11 @@ The setup script requires Python 3.11, creates `.venv`, and installs the
 runtime and test dependencies. Heavy STT, translation, and TTS packages are
 not included in the default setup; they are listed separately in
 `requirements-ml.txt` and must only be installed when an actual model adapter
-is implemented. Copy `.env.example` to `.env` only when local configuration is
-needed; `.env` and other environment-specific files are ignored by Git.
+is implemented. The application uses local defaults; copy `.env.example` to
+`.env` to override the host, port, log level, model IDs/cache path, device, or
+maximum upload size. Invalid values are reported with the setting name when the
+application starts. `.env` and other environment-specific files are ignored by
+Git.
 
 ## Project workflow
 
@@ -58,7 +61,7 @@ through GitHub after cloning with the command above.
 - [x] AMTT-3 — Requirements and acceptance tests.
 - [x] AMTT-4 — Architecture and provider boundaries.
 - [x] AMTT-5 — Python environment and dependencies.
-- [ ] AMTT-6 — Environment configuration.
+- [x] AMTT-6 — Environment configuration.
 - [ ] AMTT-7 — FastAPI application entry point.
 - [ ] AMTT-8 — Health endpoint and API tests.
 - [ ] AMTT-9 — Initial browser UI shell.
