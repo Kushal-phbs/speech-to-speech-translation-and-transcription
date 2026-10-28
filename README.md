@@ -47,6 +47,16 @@ maximum upload size. Invalid values are reported with the setting name when the
 application starts. `.env` and other environment-specific files are ignored by
 Git.
 
+Start the API from the repository root with:
+
+```powershell
+python -m uvicorn app.main:app --app-dir backend --host 127.0.0.1 --port 8000
+```
+
+Interactive API documentation is available at `http://127.0.0.1:8000/docs`.
+Application startup initializes only configuration and logging; speech models
+are not loaded or downloaded.
+
 ## Project workflow
 
 Contributors should work from `main` in short-lived feature branches,
@@ -62,7 +72,7 @@ through GitHub after cloning with the command above.
 - [x] AMTT-4 — Architecture and provider boundaries.
 - [x] AMTT-5 — Python environment and dependencies.
 - [x] AMTT-6 — Environment configuration.
-- [ ] AMTT-7 — FastAPI application entry point.
+- [x] AMTT-7 — FastAPI application entry point.
 - [ ] AMTT-8 — Health endpoint and API tests.
 - [ ] AMTT-9 — Initial browser UI shell.
 - [ ] AMTT-10 — Git branching, PR, and review rules.
