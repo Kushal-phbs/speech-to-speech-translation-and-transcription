@@ -59,6 +59,11 @@ are not loaded or downloaded.
 The `GET /api/health` endpoint returns `{"status": "ok"}`. Run its API tests
 from the repository root with `python -m pytest`.
 
+The UI scaffold can be previewed by opening `frontend/index.html` in a desktop
+browser. Direction selection and text character count work locally; microphone,
+translation, and audio controls remain disabled until those features are wired
+to the API.
+
 ## Project workflow
 
 Contributors should work from `main` in short-lived feature branches,
@@ -76,7 +81,7 @@ through GitHub after cloning with the command above.
 - [x] AMTT-6 — Environment configuration.
 - [x] AMTT-7 — FastAPI application entry point.
 - [x] AMTT-8 — Health endpoint and API tests.
-- [ ] AMTT-9 — Initial browser UI shell.
+- [x] AMTT-9 — Initial browser UI shell.
 - [ ] AMTT-10 — Git branching, PR, and review rules.
 
 Sprint 1 remains in progress until all ten items and the release
