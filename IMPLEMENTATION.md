@@ -372,7 +372,7 @@ language directions are selectable. - Controls have labels and
 disabled/loading states. - No model/API calls are required for this
 scaffold.
 
-### S1-10 --- Establish Git branching, PR and review rules
+### S1-10 --- Establish Git branching, PR and review rules — **Completed**
 
 **Owner:** Member D\
 **Description:** Document shared Git workflow and ensure every member
@@ -748,7 +748,7 @@ docs/<JIRA-KEY>-short-description
 test/<JIRA-KEY>-short-description
 ```
 
-Example: `feature/AMT-17-translation-endpoint`
+Example: `feature/AMTT-17-translation-endpoint`
 
 ### Start every task by pulling
 
@@ -795,7 +795,8 @@ Replace placeholders. Prefer adding specific files instead of
     examples where useful, and any setup changes.
 3.  A different team member reviews the code.
 4.  Resolve review comments and rerun tests.
-5.  Merge the PR only when checks pass.
+5.  Merge the PR only when checks pass, using GitHub's **Squash and
+    merge** option to avoid merge commits.
 6.  Delete the feature branch after merge if GitHub permits.
 7.  The task owner runs `git switch main` and `git pull origin main`
     before starting another item.
@@ -803,17 +804,28 @@ Replace placeholders. Prefer adding specific files instead of
 ### If `main` changes while working
 
 Before opening/merging a PR, sync your branch with the latest `main`
-using the team's agreed approach (merge or rebase). Beginners should use
-merge unless the team is comfortable resolving rebase conflicts:
+before publishing it, using rebase so the feature branch does not add a
+merge commit:
 
 ``` powershell
 git fetch origin
-git merge origin/main
+git rebase origin/main
 ```
 
-Resolve conflicts carefully, run tests, then push the branch. Never
-force-push `main`. Do not overwrite another member's work to resolve a
-conflict; ask the author when intent is unclear.
+Resolve conflicts carefully and rerun tests before pushing. If the branch
+was already published and the rebase would require a force push, do not
+force-push; coordinate with the reviewer and create a fresh branch if
+needed. Never force-push shared `main`. Do not overwrite another member's
+work to resolve a conflict; ask the author when intent is unclear.
+
+### Pull request checklist and branch protection
+
+The repository includes `.github/PULL_REQUEST_TEMPLATE.md` with the
+required summary, test evidence, and review checklist. Repository
+administrators should enable protection for `main` in GitHub settings,
+requiring at least one approving review and preventing force pushes and
+branch deletion. Branch protection is a repository permission and must be
+confirmed by an administrator; contributors must not assume it is enabled.
 
 ### Sprint checkpoint commits and tags
 

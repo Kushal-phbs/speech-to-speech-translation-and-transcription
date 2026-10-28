@@ -30,7 +30,7 @@ and approves that integration.
 The repository is designed to work on Windows with Python 3.11.
 
 ```powershell
-git clone https://github.com/VaaniPlus/speech-to-speech-translation-and-transcription.git
+git clone https://github.com/Kushal-phbs/speech-to-speech-translation-and-transcription.git
 cd speech-to-speech-translation-and-transcription
 ./scripts/setup_windows.ps1
 .\.venv\Scripts\Activate.ps1
@@ -66,10 +66,27 @@ to the API.
 
 ## Project workflow
 
-Contributors should work from `main` in short-lived feature branches,
-follow the items in `IMPLEMENTATION.md` in order, and open a pull request
-for each completed Scrum item. Team members can review the repository
-through GitHub after cloning with the command above.
+Contributors should work on one short-lived branch per Scrum item, based on
+the latest `main`, and open a pull request for each completed item. Never
+commit or push directly to shared `main`, and never force-push it. Rebase a
+feature branch before publishing if `main` has moved; use GitHub's **Squash and
+merge** option to avoid merge commits. A different team member should review
+the pull request and approve it before it is merged.
+
+```powershell
+git switch main
+git pull --ff-only origin main
+git switch -c feature/AMTT-<number>-short-description
+# Make and test the change, then commit only the relevant files.
+git push -u origin feature/AMTT-<number>-short-description
+```
+
+Replace the example branch name with the task's Jira key and a short
+description. Use the pull request checklist in
+[`.github/PULL_REQUEST_TEMPLATE.md`](.github/PULL_REQUEST_TEMPLATE.md).
+Repository administrators should protect `main` by requiring an approving
+review and preventing force pushes and branch deletion. This repository's
+branch protection must be enabled in GitHub settings by an administrator.
 
 ## Current status
 
@@ -82,7 +99,7 @@ through GitHub after cloning with the command above.
 - [x] AMTT-7 — FastAPI application entry point.
 - [x] AMTT-8 — Health endpoint and API tests.
 - [x] AMTT-9 — Initial browser UI shell.
-- [ ] AMTT-10 — Git branching, PR, and review rules.
+- [x] AMTT-10 — Git branching, PR, and review rules.
 
 Sprint 1 remains in progress until all ten items and the release
 checkpoint are completed. The detailed plan is maintained in
