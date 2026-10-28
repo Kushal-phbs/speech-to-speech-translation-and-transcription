@@ -323,7 +323,7 @@ Each model component has a replaceable provider boundary. -
 Request/response flow and error handling are documented. - No
 model-specific code is required by route handlers.
 
-### S1-05 --- Set up Python environment and dependencies
+### S1-05 --- Set up Python environment and dependencies — **Completed**
 
 **Owner:** Member C\
 **Description:** Add a minimal Python 3.11 backend environment and pin

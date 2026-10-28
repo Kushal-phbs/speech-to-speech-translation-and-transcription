@@ -1,0 +1,5 @@
+# Optional heavy model dependencies.
+# Install only on the target environment after the corresponding model adapter
+# and its official Windows compatibility/licensing checks are completed.
+# These packages are intentionally excluded from requirements.txt and
+# requirements-dev.txt so normal setup and tests do not download models.
