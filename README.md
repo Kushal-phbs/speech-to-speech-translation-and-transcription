@@ -33,12 +33,16 @@ The repository is designed to work on Windows with Python 3.11.
 git clone https://github.com/VaaniPlus/speech-to-speech-translation-and-transcription.git
 cd speech-to-speech-translation-and-transcription
 ./scripts/setup_windows.ps1
+.\.venv\Scripts\Activate.ps1
+python -m pytest
 ```
 
-At later setup stages, the Windows setup script will create the local
-Python environment and install project dependencies. Copy `.env.example`
-to `.env` only when local configuration is needed; `.env` and other
-environment-specific files are ignored by Git.
+The setup script requires Python 3.11, creates `.venv`, and installs the
+runtime and test dependencies. Heavy STT, translation, and TTS packages are
+not included in the default setup; they are listed separately in
+`requirements-ml.txt` and must only be installed when an actual model adapter
+is implemented. Copy `.env.example` to `.env` only when local configuration is
+needed; `.env` and other environment-specific files are ignored by Git.
 
 ## Project workflow
 
@@ -53,7 +57,7 @@ through GitHub after cloning with the command above.
 - [x] AMTT-2 — Jira backlog, sprint structure, and export completed.
 - [x] AMTT-3 — Requirements and acceptance tests.
 - [x] AMTT-4 — Architecture and provider boundaries.
-- [ ] AMTT-5 — Python environment and dependencies.
+- [x] AMTT-5 — Python environment and dependencies.
 - [ ] AMTT-6 — Environment configuration.
 - [ ] AMTT-7 — FastAPI application entry point.
 - [ ] AMTT-8 — Health endpoint and API tests.
