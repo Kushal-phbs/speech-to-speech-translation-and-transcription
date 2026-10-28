@@ -1,18 +1,43 @@
+# Local environment and secrets
 .env
+.env.*
+!.env.example
 .venv/
 venv/
+ENV/
+
+# Python caches, test output, and build artifacts
 __pycache__/
 *.py[cod]
 .pytest_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
 .mypy_cache/
 .ruff_cache/
+build/
+dist/
+*.egg-info/
+
+# Downloaded models and generated media
 models/
 model_cache/
+recordings/
+*.pt
+*.pth
+*.onnx
+*.safetensors
+*.gguf
+*.bin
 *.wav
 *.mp3
 *.ogg
 *.webm
 *.mp4
-dist/
-build/
-*.egg-info/
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
