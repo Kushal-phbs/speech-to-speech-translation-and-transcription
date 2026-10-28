@@ -99,7 +99,7 @@ branch protection must be enabled in GitHub settings by an administrator.
 - [x] AMTT-7 — FastAPI application entry point.
 - [x] AMTT-8 — Health endpoint and API tests.
 - [x] AMTT-9 — Initial browser UI shell.
-- [x] AMTT-10 — Git branching, PR, and review rules.
+- [ ] AMTT-10 — Git branching, PR, and review rules.
 
 Sprint 1 remains in progress until all ten items and the release
 checkpoint are completed. The detailed plan is maintained in
