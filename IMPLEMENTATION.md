@@ -343,7 +343,7 @@ IDs/paths, device selection, and upload limits.\
 only. - `.env` is ignored by Git. - Application has sensible local
 defaults. - Invalid configuration produces a readable startup error.
 
-### S1-07 --- Implement FastAPI application entry point
+### S1-07 --- Implement FastAPI application entry point — **Completed**
 
 **Owner:** Member B\
 **Description:** Create `backend/app/main.py`, app initialization,

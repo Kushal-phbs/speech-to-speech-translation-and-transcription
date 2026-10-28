@@ -1,1 +1,5 @@
-"""API routes placeholder."""
+"""API router registration."""
+
+from fastapi import APIRouter
+
+router = APIRouter()
