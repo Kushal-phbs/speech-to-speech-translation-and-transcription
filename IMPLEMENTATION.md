@@ -313,7 +313,7 @@ separately documented. - Typed-text fallback is included. - Out-of-scope
 features are explicitly listed. - Team and instructor-facing demo
 criteria are documented.
 
-### S1-04 --- Document architecture and provider boundaries
+### S1-04 --- Document architecture and provider boundaries — **Completed**
 
 **Owner:** Member B\
 **Description:** Create `docs/architecture.md` describing browser, API,
